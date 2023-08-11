@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Прогноз погоды</title>
+</head>
+<body>
+    
+    <div class="weatherCon">
+        <form action="#" method="get" class="searchCity">
+            <div class="inputCon">
+                <input type="search" class="inputCon__searchInput" placeholder="Aktobe">
+                <button type="submit" class="inputCon__btn">
+                    <img src="img/search.svg" class="inputCon__icon" alt="Лупа">
+                </button>
+            </div> 
+        </form>
+        
+        <div class="flexCon">
+            <div class="leftCon">
+                <div class="nowCon">
+                    <div class="nowCon__temperature">14&#176;</div>
+                    <img src="img/cloud.svg" class="nowCon__cloudIcon" alt="Обачко">
+                    <div class="nowCon__city">Aktobe</div>
+                    <button type="button" class="nowCon__btn">  
+                        <img src="img/heart.png" class="nowCon__img" alt="Сердце">
+                    </button>
+                </div>
+                
+                <div class="buttons">
+                    <button class="buttons__now buttons__button activeBtn">Now</button>
+                    <button class="buttons__details buttons__button">Details</button>
+                    <button class="buttons__forecast buttons__button">Forecast</button>
+                </div>
+            </div>
+            
+            <div class="rightCon">
+                <div class="favoritesCon">
+                    <div class="titleCon">
+                        <h2 class="titleCon__title">Added Locations:</h2>
+                    </div>
+                    
+                    <div class="fovoritesCity">
+                        <ul class="fovoritesCity__list">
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
